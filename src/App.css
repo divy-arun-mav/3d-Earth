@@ -17,11 +17,30 @@ canvas{
   height: 500px !important;
 }
 
+.scene2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .scene2-container{
-  max-width: 960px;
-  margin: 0 auto;
+  max-width: 50vw;
+    margin: 100px auto;
   padding: 2rem;
   background-color: #333;
   color: #fff;
   border-radius: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .scene2 {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .scene2-container {
+    margin: 0;
+  }
+
+  canvas {
+    height: max-content;
+  }
 }
