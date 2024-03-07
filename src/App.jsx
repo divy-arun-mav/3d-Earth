@@ -157,7 +157,7 @@ const Scene2 = () => {
   return (
     <>
       <ambientLight />
-      <OrbitControls />
+      <OrbitControls enableZoom={false} autoRotate={true} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
       <Environment preset="sunset" />
       <ContactShadows position={[0,-2.5,0]} opacity={0.5} scale={50} blur={1} far={10} resolution={256} color="#000000" />
       <Suspense fallback={null}>
